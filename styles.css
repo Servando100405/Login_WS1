@@ -1,0 +1,191 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #cfb9cd,
+        #570a57,
+        #f5f1f8,
+        #9d4edd
+    );
+    overflow:hidden;
+}
+
+/* Decorative circles */
+body::before,
+body::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(30px);
+}
+
+body::before{
+    width:250px;
+    height:250px;
+    background:#c77dff;
+    top:-60px;
+    left:-60px;
+    opacity:.5;
+}
+
+body::after{
+    width:300px;
+    height:300px;
+    background:#7209b7;
+    bottom:-80px;
+    right:-80px;
+    opacity:.4;
+}
+
+/* Container */
+.login-container{
+    width:400px;
+    position:relative;
+    z-index:1;
+}
+
+/* Glass Card */
+.login-form{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+    padding:40px;
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.35),
+    0 0 25px rgba(183,77,255,.3);
+}
+
+.login-form h2{
+    text-align:center;
+    color:#fff;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.login-form p{
+    text-align:center;
+    color:#eee;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    color:#fff;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input::placeholder{
+    color:#ddd;
+}
+
+.input-group input:focus{
+    background:rgba(255,255,255,.28);
+    box-shadow:0 0 12px #d291ff;
+}
+
+/* Remember Me */
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    color:#fff;
+    font-size:14px;
+}
+
+.options input{
+    accent-color:#d291ff;
+}
+
+.options a{
+    color:#ffd6ff;
+    text-decoration:none;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/* Login Button */
+.login-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    background:linear-gradient(90deg,#9d4edd,#c77dff);
+    color:#fff;
+    padding:14px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.login-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #d291ff;
+}
+
+/* Signup */
+.signup{
+    margin-top:20px;
+    color:#fff;
+}
+
+.signup a{
+    color:#ffd6ff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.signup a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:450px){
+
+.login-container{
+    width:90%;
+}
+
+.login-form{
+    padding:30px;
+}
+
+.login-form h2{
+    font-size:28px;
+}
+}
