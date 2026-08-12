@@ -22,6 +22,16 @@ body{
     );
     overflow:hidden;
 }
+.login-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-logo img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
 
 /* Decorative circles */
 body::before,
@@ -71,14 +81,14 @@ body::after{
 
 .login-form h2{
     text-align:center;
-    color:#fff;
+    color:#f6f1f1;
     font-size:34px;
     margin-bottom:8px;
 }
 
 .login-form p{
     text-align:center;
-    color:#eee;
+    color:#030303;
     margin-bottom:25px;
 }
 
@@ -88,7 +98,7 @@ body::after{
 
 .input-group label{
     display:block;
-    color:#fff;
+    color:#060505;
     margin-bottom:8px;
     font-weight:500;
 }
@@ -111,7 +121,7 @@ body::after{
 
 .input-group input:focus{
     background:rgba(255,255,255,.28);
-    box-shadow:0 0 12px #d291ff;
+    box-shadow:0 0 12px #680fa8;
 }
 
 /* Remember Me */
@@ -125,11 +135,11 @@ body::after{
 }
 
 .options input{
-    accent-color:#d291ff;
+    accent-color:#8516d4;
 }
 
 .options a{
-    color:#ffd6ff;
+    color:#520d52;
     text-decoration:none;
 }
 
@@ -144,7 +154,7 @@ body::after{
     text-align:center;
     text-decoration:none;
     background:linear-gradient(90deg,#9d4edd,#c77dff);
-    color:#fff;
+    color:#030303;
     padding:14px;
     border-radius:12px;
     font-size:17px;
@@ -165,7 +175,7 @@ body::after{
 }
 
 .signup a{
-    color:#ffd6ff;
+    color:#760d76;
     text-decoration:none;
     font-weight:600;
 }
